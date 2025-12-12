@@ -302,4 +302,4 @@ O simulador processa eventos em tempo real:
 MIT
 
 ## Testes unitários
-image.jpeg
+<img scr = "image.png">

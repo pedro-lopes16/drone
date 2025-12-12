@@ -1,0 +1,29 @@
+{
+  "name": "drone-delivery-system",
+  "version": "1.0.0",
+  "description": "Sistema de simulação de entregas por drones com otimização de rotas",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node src/examples/example.js",
+    "test:unit": "node src/tests/test-unitarios.js",
+    "test:carga": "node src/tests/test-carga.js",
+    "test:all": "node src/tests/test-unitarios.js && node src/tests/test-carga.js",
+    "exemplo-avancado": "node src/examples/exemplo-avancado.js",
+    "dashboard": "node src/examples/dashboard-example.js",
+    "api": "node src/api/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": [
+    "drone",
+    "delivery",
+    "logistics",
+    "optimization"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+

@@ -1,3 +1,28 @@
+Principais Prompts utilizados com IA:
+1- "A ideia principal é a criação de um sistema em Node.js que gerencie entregas feitas por drones e seus respectivos voos, respeitando regras de capacidade, distância e prioridade de entrega. Esse programa contém regras básicas relacionadas a capacidade (cada drone suporta até X kg e pode viajar até Y km por carga), mapeamento (A cidade é uma malha de coordenadas, utilize uma matriz como referência) e um sistema de pedidos que deve conter a locação do cliente (X, Y), peso do pacote e prioridade de entrega (baixa, media, alta). O objetivo principal é alocar pacotes de entrega nos drones com o menor número de viagens possível. Faça a estrutura do projeto de forma organizada, a fim de que cada pasta contenha uma funcionalidade separada e funcional, utilize o package.json para definir scripts para futuras automações de teste." 
+
+2- "Executei o codigo no terminal, porém parece que não tenho node.js instalado. Poderia me explicar passo a passo como fazer a instalação e conseguir iniciar os testes?"
+
+3- "Ótimo, o node.js está funcionando e rodando. Gostaria de implementar mais funcionalidades a essa aplicação, faça o passo a passo de como adicionar a funcionalidade extra de simulação de consumo de bateria do drone (diminuir com o tempo ou distância), especificando exatamente onde devo alterar sem que prejudique as funcionalidades restantes já implementadas."  
+
+4- "Funcionando. Gostaria que me fornecesse o código base de outras funcionalidades também, e quais outras pastas devo criar para que fique organizado. Proximas funcionalidades: 1- inserir obstaculos entre pontos de rota. 2- calcular tempo total de entrega. 3- criar uma fila de entrega por ondem de prioridade. Crie eventuais situações para cada uma dessas funcionalidades, como calculo alternativo de rota em caso de obstaculos, etc. Mostre exatamente onde deve ser alterado nos codigos prévios caso algum comando necessite ser alterado"
+
+5- "Terminei todas alterações. Proximo passo vai ser a melhoria e otimização do sistema de entregas. Agora o sistema deve priorizar entregas com base no peso, prioridade e distancia. O intuito é buscar combinações de pacotes/viagens que maximizem o uso do drone, incluindo a bateria, alcance e capacidade de carga. Utilize um consumo base de 0,5% por km para testes, calcule um consumo adicional baseado no peso da entrega e um sinal de recarga automatica quando a bateria está proximo de 20%~10%, solicitando um retorno forçado."  
+
+6- "Crie uma simulação orientada a eventos, na qual o drone retorna mensagens de status: Idle → Carregando → Em voo → Entregando → Retornando → Idle. Essa parte será voltada para gerenciamento de voo no momento dos testes." 
+
+7- "Sim, finalmente. O ultimo passo hoje vai ser a definição de APIs RESTful, me forneca o codigo base para criar um serviço com endpoints como: POST /pedidos, GET /entregas/rota e GET /drones/status. Além disso, se tiver algum passo a passo a mais para efetivar o funcionamento dessas APIs, favor fornecer." 
+
+8- "Hoje, a fim de finalizar o projeto sobre drones, vamos implementar a validação e analise sobre as entregas. Primeiro, os testes serão automatizados, havendo a cobertura de testes unitários e simulações de carga (como o sistema se comporta com diversos pedidos). Faça um guia detalhado de como posso implementar esses testes no codigo base que estavamos desenvolvendo antes."
+
+9- "Ok. O proximo passo também deve ser feito atraves de um tutorial detalhado, sendo relacionado ao tratamento de erros e validações, como por exemplo rejeitar pacotes que ultrapassem a capacidade do drone e retornar mensagens claras para entradas inválidas. Como posso implementar isso no codigo sem alterar o funcionamento?"
+
+10- "Preciso implementar uma area de relatorios (dashboard), utilizando uma visualização simples com as informações: quantidades de entregas realizadas, tempo medio de entrega, qual drone mais eficiente e um registo do local da entrega. Qual a melhor forma de agregar essas informações ao programa e onde inseri-las?" 
+
+11- "Para finalizar as funcionalidades do sistema, como posso implementar a funcionalidade extra de feedback do cliente em relação ao status da entrega, informando a localização em tempo real para o cliente?"
+
+12-"Agora que finalizamos, faça um documento de texto para preencher o readme de como executar o programa, liste todas as funcionalidades que o sistema possui e como acessá-las individualmente, a estrutura detalhada do projeto, os requisitos básicos de funcionamento e informações da utilização das APIs."
+
 # Sistema de Entregas por Drones v2.0
 
 Sistema avançado de simulação de gerenciamento de entregas por drones em áreas urbanas, desenvolvido em Node.js. O sistema inclui otimização inteligente, gerenciamento de bateria, obstáculos, simulação orientada a eventos e API RESTful completa.
@@ -276,6 +301,5 @@ O simulador processa eventos em tempo real:
 
 MIT
 
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
+## Testes unitários
+image.jpeg

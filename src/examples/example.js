@@ -133,3 +133,4 @@ function exemploComparacao() {
 exemploCompleto();
 exemploComparacao();
 
+

@@ -147,3 +147,4 @@ runner.run().then(resultados => {
   process.exit(resultados.falhou > 0 ? 1 : 0);
 });
 
+

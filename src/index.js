@@ -43,3 +43,4 @@ console.log('\nEstatísticas do Sistema:');
 const stats = sistema.getEstatisticas();
 console.log(JSON.stringify(stats, null, 2));
 
+
